@@ -1,0 +1,39 @@
+/* Styles for medium-sized screens (tablets) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+	nav {
+		box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.048);
+	}
+		body {
+			width: 100%;
+		}
+
+	.container {
+		height: 8rem;
+		width: 100%;
+		margin: auto;
+	}
+
+	.site-name {
+		font-size: 2.5rem;
+	}
+
+
+
+	.hero {
+		height: 50vh;
+	}
+
+	.hero .hero-cotnent {
+		padding-top: 2rem;
+
+	}
+
+	.hero .hero-text {
+		width: 45%;
+	}
+
+	.hero img {}
+
+	/* Styles for small screens (phones) */
+	@media only screen and (max-width: 768px) {}
