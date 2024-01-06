@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2</title>
+    <style></style>
+  </head>
+
+  <body>
+    <a href="../index.html">
+      <h2>Home</h2>
+    </a>
+    <form>
+      <fieldset style="background-color: crimson; border: 0px">
+        <legend style="background-color: #0084ff">Personal Date</legend>
+        <br />
+        <fieldset style="background-color: #ffae00; border: 0px">
+          <legend style="background-color: #0084ff; padding: 40px 0px">
+            Your Name
+          </legend>
+          <table>
+            <tr>
+              <td><label for="">First Name </label></td>
+              <td>: <input type="text" required /></td>
+            </tr>
+            <tr>
+              <td><label for="">Second Name </label></td>
+              <td>: <input type="text" required /></td>
+            </tr>
+          </table>
+        </fieldset>
+        <br />
+        <br />
+
+        <table>
+          <tr>
+            <td><label for="">your phone</label></td>
+            <td>: <input type="tel" required /></td>
+          </tr>
+          <tr>
+            <td><label for="">E-mail</label></td>
+            <td>: <input type="email" required /></td>
+          </tr>
+          <tr>
+            <td><label for="password">password</label></td>
+            <td>: <input type="password" id="password" name="password" required /></td>
+          </tr>
+          <tr>
+            <td><label for="password">re-password</label></td>
+            <td>: <input type="password" id="repassword" name="repassword" required /></td>
+          </tr>
+        </table>
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <input type="radio" name="gender" id="gender-male" value="male" />
+        <label for="male">Male</label>
+        <br />
+        <input type="radio" name="gender" id="gender-female" value="female" />
+        <label for="female">Female</label>
+        <br />
+        <br />
+        <input type="checkbox" name="student" id="student" />
+        <label for="student">Student</label>
+        <br />
+        <input type="checkbox" name="graduate" id="graduate" />
+        <label for="graduate">Graduate</label>
+        <br />
+        <br />
+        <select name="auc-selection" id="auc">
+          <option value="" disabled selected>AUC</option>
+          <optgroup label="Group 1">
+            <option value="option1.1">Option 1.1</option>
+          </optgroup>
+          <optgroup label="Group 2">
+            <option value="option2.1">Option 2.1</option>
+            <option value="option2.2">Option 2.2</option>
+          </optgroup>
+
+          <optgroup label="Group 3" disabled>
+            <option value="option3.1">Option 3.1</option>
+            <option value="option3.2">Option 3.2</option>
+          </optgroup>
+        </select>
+        <br />
+        <button
+          type="submit"
+          style="border: none; background: none;">
+          <img src="images/submit-button.png" width="100px" />
+        </button>
+        <br />
+        <br />
+        <br />	
+        <br />
+        <br />
+      </fieldset>
+    </form>
+  </body>
+</html>
