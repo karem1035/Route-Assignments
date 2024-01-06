@@ -1,0 +1,10 @@
+body {
+	background: rgb(17, 190, 255);
+	background: linear-gradient(90deg, rgba(17, 190, 255, 1) 0%, rgba(0, 70, 134, 1) 100%);
+
+
+}
+
+.full-page {
+	height: 100vh;
+}
