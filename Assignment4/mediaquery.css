@@ -1,0 +1,177 @@
+/* Styles for medium-sized screens (tablets) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	.nav {
+		width: 80%;
+	}
+
+	.nav ul {
+		gap: 30px;
+	}
+
+	.intro {
+		gap: 30px;
+		width: 80%;
+	}
+
+	.intro button {
+		margin: 10px 10px 0 0;
+	}
+
+	.img-border {
+		display: none;
+	}
+
+	.intro .content ul li {
+		font-size: 12px;
+		margin-bottom: 10px;
+	}
+
+	.servies {
+		padding: 50px 0;
+	}
+
+	.services-content {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.services-list {
+		flex-direction: column;
+		width: 50%;
+	}
+
+	.portfolio-content,
+	.card,
+	.blog .container,
+	.contact .container {
+		width: 80%;
+	}
+
+	.projects {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.stats .container {
+		width: 80%;
+	}
+}
+
+/* Styles for small screens (phones) */
+@media only screen and (max-width: 768px) {
+
+	.nav {
+		width: 100%;
+		flex-direction: column;
+		padding: 20px 0;
+	}
+
+	.nav ul {
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		padding: 10px 0;
+	}
+
+	.hero {
+		text-align: center;
+	}
+
+	.hero h1 {
+		font-size: 38px;
+	}
+
+	.intro {
+		flex-direction: column;
+		width: 80%;
+		gap: 50px;
+	}
+
+	.img-border {
+		display: none;
+	}
+
+	.intro p {
+		color: #555;
+		line-height: 2;
+	}
+
+	.intro .content ul {
+		column-count: 1;
+	}
+
+	.services-content {
+		width: 80%;
+	}
+
+	.services-list {
+		flex-direction: column;
+	}
+
+
+	.portfolio-content {
+		width: 80%;
+	}
+
+	.portfolio ul {
+		width: 90%;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.projects {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.stats .container {
+		flex-direction: column;
+	}
+
+	.stats .container div {
+		margin: 50px 0;
+	}
+
+	.card {
+		width: 80%;
+	}
+
+	.card .container {
+		flex-direction: column;
+	}
+
+	.card img {
+		position: relative;
+		top: auto;
+		left: auto;
+		width: 40%;
+	}
+
+	.blog .container {
+		width: 80%;
+		flex-direction: column;
+		gap: 35px;
+	}
+
+	.contact .container {
+		width: 80%;
+	}
+
+	.input-grid {
+
+		grid-template-columns: repeat(1, 1fr);
+		row-gap: 20px;
+	}
+
+	.contact form .subject,
+	.contact form textarea {
+		grid-column: 1;
+	}
+
+
+	footer {
+		padding: 40px 10px;
+		dddddddddddddddddddd
+	}
+}
