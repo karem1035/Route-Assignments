@@ -8,3 +8,8 @@ body {
 .full-page {
 	height: 100vh;
 }
+
+.custom-tr {
+	background-color: beige !important;
+	color: #fff !important;
+}
