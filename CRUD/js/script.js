@@ -228,10 +228,11 @@ function validation(regex, element, alert) {
 function edit(index) {
   // Clears the input tags
   clearInput();
-  // Change buttons
+  // Swap buttons Add > Update
   updateButton.classList.remove('d-none');
   addButton.classList.add('d-none');
 
+  // Global Varibale stores the index of the edited item
   editedButton = index;
   const product = productsArray[index];
   // Populate input fields with the values from the product data
@@ -249,16 +250,23 @@ function edit(index) {
  * @param {number} index - The index of the product in the productsArray to be updated.
  */
 function update(index) {
+  // Retrieve the product at the specified index
   const product = productsArray[index];
+
+  // Update product properties with values from input fields
   product.productNameValue = productName.value;
   product.productPriceValue = productPrice.value;
   product.productCategoryValue = productCategory.value;
   product.productSaleValue = productSale.checked;
   product.productDescriptionValue = productDescription.value;
 
+  // Save the updated productsArray to localStorage
   localStorage.setItem('DataList', JSON.stringify(productsArray));
 
+  // Display the updated data
   displayData();
+
+  // Clear the input fields
   clearInput();
 }
 
