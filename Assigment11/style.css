@@ -1,0 +1,45 @@
+/*
+#95d6ea 
+#7bc7dd 
+#62a1c7 
+#528ab4
+#15719f
+*/
+
+.textColor {
+	color: #95d6ea !important;
+}
+
+
+.app-body {
+	position: relative;
+	background-image: url(background.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+.app-body::before {
+	content: '';
+	/* Required for pseudo-elements */
+	position: absolute;
+	/* Position the pseudo-element relative to its nearest positioned ancestor */
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #528ab483;
+	/* Adjust the opacity as needed (0.5 for 50% opacity) */
+	z-index: 1;
+	/* Ensure the pseudo-element is above the background image */
+}
+
+.search .btn {
+	background-color: #95d6ea !important;
+}
+
+.today,
+.nextDay {
+	border: 5px #95d6ea solid;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
+    />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="bg-danger app-body pb-5">
+      <header
+        class="bg-dark p-4 text-center d-flex align-items-center justify-content-center sticky-top mb-5"
+      >
+        <p class="fs-2 m-0 me-3 text-white">Weather App</p>
+        <i class="bi bi-cloud-haze2-fill fs-1 textColor"></i>
+      </header>
+      <div class="container mx-auto position-relative z-3 search min-vh-100">
+        <form
+          id="searchForm"
+          class="d-flex m-auto rounded-pill overflow-hidden"
+        >
+          <input
+            id="inputValue"
+            type="text"
+            name=""
+            class="form-control form-control-lg rounded-0 bg-dark border-0 text-white ps-5 fs-3 p-2"
+          />
+          <button
+            type="submit"
+            class="btn rounded-0 text-dark pe-3 fs-4 w-25 border-0"
+            id="searchBtn"
+          >
+            Search
+          </button>
+        </form>
+        <div
+          class="container m-auto bg-dark mt-5 rounded-5 p-4 d-flex flex-column text-white"
+        >
+          <p class="text-center fs-3">
+            Location:<span class="ms-3 textColor" id="location"> </span>
+          </p>
+          <p class="text-center fs-5 text-light fw-light" id="region"></p>
+          <div class="row today my-5 text-white rounded-5">
+            <div
+              class="col-4 p-2 text-center fs-3 d-flex flex-column align-items-center justify-content-center"
+            >
+              <p id="day1WeekName" class="fw-bolder">Today:</p>
+              <p id="todayDate" class="fw-normal fs-4 text-secondary"></p>
+            </div>
+            <div
+              class="col-4 p-2 text-center d-flex flex-column align-items-center justify-content-center"
+            >
+              <img src="" alt="" id="day1Icon" />
+              <p class="fs-1 fw-bold" id="day1Max"></p>
+              <p class="fs-2 text-secondary fw-bold" id="day1Min"></p>
+            </div>
+            <div
+              class="col-4 p-2 text-center d-flex flex-column align-items-center justify-content-center"
+            >
+              <p id="day1Condition" class="fw-light"></p>
+              <div class="d-flex flex-column">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-cloud-drizzle fs-2"></i>
+                  <p class="m-0 ps-3 pe-4" id="day1Rain"></p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-wind fs-2"></i>
+                  <p class="m-0 ps-3 pe-4" id="day1Wind"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Day 2 and Day 3 -->
+          <div
+            class="d-flex justify-content-between nextDay rounded-5 bg-black"
+          >
+            <div class="col-6 p-2 text-center p-5">
+              <p class="fs-3 fw-bold">
+                Tomorow: <span id="day2WeekName"></span>
+              </p>
+              <div class="d-flex align-items-center justify-content-around">
+                <div class="bg-">
+                  <p class="fs-2 fw-bold" id="day2Max"></p>
+                  <p class="fs-4" id="day2Min"></p>
+                </div>
+                <div class="bg-">
+                  <img src="" alt="" id="day2Icon" />
+                  <p id="day2Condition"></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 p-2 text-center p-5">
+              <p class="fs-3 fw-bold" id="day3WeekName"></p>
+              <div class="d-flex align-items-center justify-content-around">
+                <div class="bg-">
+                  <p class="fs-2 fw-bold" id="day3Max"></p>
+                  <p class="fs-4" id="day3Min"></p>
+                </div>
+                <div class="bg-">
+                  <img src="" alt="" id="day3Icon" />
+                  <p id="day3Condition"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+    <!-- Bootstrap script -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
